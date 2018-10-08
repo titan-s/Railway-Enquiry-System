@@ -4,7 +4,7 @@ train_no=input("Input train no. : ")
 url=url+train_no+"/date/"
 #date=datetime.date.today()
 date=input("date <dd-mm-yyyy> : ")
-url=url+date+"/apikey/y3clwapnm8/"
+url=url+date+"/apikey/<ENTER YOUR API KEY>"
 json_data=requests.get(url).json()
 print(json_data)
 print(type(json_data))
